@@ -16,7 +16,9 @@ import javafx.stage.Stage;
 
 public class MainController {
 	
-
+	@FXML
+	private Button registerBttn;
+	
 	@FXML
 	private Button signInBttn;
 
@@ -58,9 +60,25 @@ public class MainController {
 				} else if(userNameTxt.getText().equals("")) {
 					statusLbl.setText("Please enter username!");
 				} else 
-					statusLbl.setText("Username does not exist!");
-				
-
+					statusLbl.setText("Username does not exist!");		
 
 	}
+	public void Register(ActionEvent actionEvent) throws IOException{
+		
+		
+			
+				stage = (Stage) registerBttn.getScene().getWindow();
+
+				stage.setTitle("Register");
+
+				// load mainMenu scene
+				root = FXMLLoader.load(getClass().getResource(""));
+
+				Scene scene = new Scene(root, 600, 400);
+				stage.setScene(scene);
+				stage.show();
+			
+		
+
+}
 	}
