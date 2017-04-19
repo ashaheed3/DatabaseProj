@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <TextField layoutX="282.0" layoutY="67.0" prefHeight="12.0" prefWidth="181.0" />
+      <Label layoutX="55.0" layoutY="73.0" text="First Name" />
+      <Label layoutX="198.0" layoutY="14.0" prefHeight="27.0" prefWidth="99.0" text="ORDER">
+         <font>
+            <Font name="Arial Narrow" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="120.0" text="Last Name" />
+      <Label layoutX="57.0" layoutY="169.0" text="Credit Card No." />
+      <Label layoutX="25.0" layoutY="265.0" text="Expiration Date (mm/dd/yyyy)" />
+      <TextField layoutX="282.0" layoutY="114.0" prefHeight="39.0" prefWidth="181.0" />
+      <TextField layoutX="282.0" layoutY="163.0" prefHeight="39.0" prefWidth="181.0" />
+      <TextField layoutX="282.0" layoutY="259.0" prefHeight="39.0" prefWidth="181.0" />
+      <Label layoutX="58.0" layoutY="220.0" prefHeight="27.0" prefWidth="142.0" text="Credit Card Type" />
+      <Button layoutX="346.0" layoutY="415.0" mnemonicParsing="false" text="Purchase" />
+      <Button layoutX="90.0" layoutY="415.0" mnemonicParsing="false" text="Cancel" />
+      <ChoiceBox layoutX="281.0" layoutY="214.0" prefHeight="39.0" prefWidth="181.0" />
+   </children>
+</AnchorPane>
