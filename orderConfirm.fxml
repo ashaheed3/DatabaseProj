@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Label layoutX="221.0" layoutY="22.0" text="Order Confirmation" />
+      <Label layoutX="60.0" layoutY="90.0" text="First Name" />
+      <Label layoutX="60.0" layoutY="134.0" text="Last name" />
+      <Label layoutX="60.0" layoutY="181.0" text="Order ID" />
+      <Label layoutX="60.0" layoutY="307.0" text="Product Name" />
+      <Label layoutX="60.0" layoutY="238.0" text="Credit Card Number" />
+      <Label layoutX="61.0" layoutY="293.0" />
+   </children>
+</AnchorPane>
