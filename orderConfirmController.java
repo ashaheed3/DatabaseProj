@@ -1,6 +1,6 @@
 package application;
 
-import java.awt.Label;
+import javafx.scene.control.Label;
 
 import javafx.fxml.FXML;
 
