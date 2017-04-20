@@ -9,6 +9,9 @@ import java.sql.SQLException;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
@@ -70,7 +73,7 @@ public class CustomerInfoController {
 	@FXML
 	private Label username;
 	@FXML
-	private TextField usernameText;
+	public TextField usernameText;
 
 	@FXML
 	private Label password;
@@ -135,13 +138,43 @@ public class CustomerInfoController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		Stage stage = (Stage) Submit.getScene().getWindow();
+
+		stage.setTitle("Products");
+
+		// load mainMenu scene
+		Parent root = null;
+		try {
+			root = FXMLLoader.load(getClass().getResource("/application/ProductPage.fxml"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		Scene scene = new Scene(root,900,700);
+		stage.setScene(scene);
+		stage.show();
 		System.out.println("inserted");
 		
 		
 	}
 	public void cancelClick(){
-		Stage stage = (Stage)Cancel.getScene().getWindow();
-		stage.close();
+		Stage stage = (Stage) Cancel.getScene().getWindow();
+
+		stage.setTitle("Register");
+
+		// load mainMenu scene
+		Parent root = null;
+		try {
+			root = FXMLLoader.load(getClass().getResource("/application/Main.fxml"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		Scene scene = new Scene(root,900,700);
+		stage.setScene(scene);
+		stage.show();
 	}
 
 	
