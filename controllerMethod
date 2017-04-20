@@ -1,0 +1,17 @@
+//code that loads method from another controller
+try {
+			 stage = (Stage) registerBttn.getScene().getWindow();
+
+			 FXMLLoader fxmlLoader = new FXMLLoader();
+			 fxmlLoader.setLocation(getClass().getResource("/application/orderConfirm.fxml"));
+			 AnchorPane frame = fxmlLoader.load();
+			 Scene scene = new Scene(frame, 600, 400);
+			 testOrderController c = ( testOrderController) fxmlLoader.getController();
+			 //Calling method from testOrderController
+			 c.setOrderId();
+			 stage.setScene(scene);
+			 stage.show();
+			 
+		    } catch (IOException e) {
+		        e.printStackTrace();
+		    }
